@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Página informativa de mi página" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <script type="text/javascript" src="boton.js"></script>
+    <button class="scroll up" onclick="scrollUp()">⬆</button>
+    <button class="scroll down" onclick="scrollDown()">⬇</button>
+</head>
+<body>
+    <section id="contenido2">
+        <div id="titulo">
+            <h2>Contacto</h2>
+        </div>
+        <form action="enviar.php method="post>
+            <fieldset>
+                <legend>Datos personales</legend>
+                Nombre:
+                <input type="text" 
+                size="40" 
+                title="Escriba su nombre para poder referirnos a usted correctamente"
+                name="nombre"/><br>
+                Correo electrónico:
+                <input type="email"
+                placeholder="nombre@servidor.com" 
+                name="mail" 
+                size="28" 
+                title="Escriba su correo electrónico para poder comunicarnos con usted" />
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Datos del proyecto</legend>
+                Breve descripción de las difcultades que encuentras:<br>
+                <textarea name="descripcion"></textarea><p>
+                Nota esperada en esta evaluación:<br>
+                <input type="radio" 
+                name="nota" 
+                value="sobresaliente" 
+                checked />
+                Sobresaliente
+                
+                <input type="radio" 
+                name="nota" 
+                value="notable" />
+                Notable
+
+                <input type="radio" 
+                name="nota" 
+                value="bien/sufiente" />
+                Bien/suficiente
+                
+                <input type="radio" 
+                name="nota" 
+                value="insuficiente" />
+                Insuficiente<p>
+                
+                Esfuerzo realizado durante el curso (de 150 al 30000):  
+                <input type="number"
+                name="esfuerzo"
+                value="1000"
+                min="150"
+                max="30000"
+                step="50">
+
+                <input id="boton_enviar"
+                type="submit"
+                value="Enviar">
+
+            </fieldset>
+    </section>
+    <div id="franja_final"></div>
+    <footer>
+        <a href="index.html">VOLVER A PÁGINA INICIAL</a>
+        <h5><a href="mailto:mario.garrod@educa.jcyl.es">Correo de contacto</a> </h5>
+    </footer>
+</body>
+</html>
